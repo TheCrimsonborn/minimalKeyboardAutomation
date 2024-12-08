@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82164ce4-8f6f-428a-a63c-4fa9d89d805d" name="Changes" comment="readme &amp; reqs" />
+    <list default="true" id="82164ce4-8f6f-428a-a63c-4fa9d89d805d" name="Changes" comment="fixing worker.py">
+      <change afterPath="$PROJECT_DIR$/assets/icon.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pvsL1zRLK9RvpHkMxLa1Hz69GF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -36,7 +39,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -79,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733658424137</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixing worker.py">
+      <option name="closed" value="true" />
+      <created>1733659416871</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733659416871</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -87,6 +99,18 @@
     <MESSAGE value="first-commit" />
     <MESSAGE value="readme" />
     <MESSAGE value="readme &amp; reqs" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme &amp; reqs" />
+    <MESSAGE value="fixing worker.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing worker.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

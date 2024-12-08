@@ -1,7 +1,10 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QLabel, QLineEdit, QSpinBox, QFileDialog
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QLabel, QLineEdit, QSpinBox, \
+    QFileDialog
+from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 from pynput import keyboard
 from worker import WorkerThread
+import ctypes  # For taskbar icon on Windows
 import sys
 
 
@@ -12,6 +15,9 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Minimal Keyboard Automation")
         self.setGeometry(200, 200, 300, 200)
         self.setWindowFlags(self.windowFlags() | Qt.WindowType.WindowStaysOnTopHint)  # Always on top
+
+        # Set the application icon
+        self.setWindowIcon(QIcon("assets/icons/icon.webp"))
 
         layout = QVBoxLayout()
 
@@ -111,7 +117,14 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == "__main__":
+    # Enable high-DPI scaling and set taskbar icon (Windows-specific)
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("minKeyAuto")
+
     app = QApplication(sys.argv)
+
+    # Set a global application icon (taskbar + window)
+    app.setWindowIcon(QIcon("assets/icons/icon.webp"))
+
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
