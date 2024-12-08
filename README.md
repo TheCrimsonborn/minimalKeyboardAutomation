@@ -28,7 +28,7 @@ A simple PyQt6-based application for automating keyboard inputs with customizabl
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/minimalKeyboardAutomation.git
+   git clone https://github.com/TheCrimsonborn/minimalKeyboardAutomation.git
    cd minimalKeyboardAutomation
    ```
 
