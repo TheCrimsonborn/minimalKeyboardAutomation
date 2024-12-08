@@ -56,4 +56,7 @@ class WorkerThread(QThread):
                         return
                     remaining = int(end_time - time.time())
                     self.status_signal.emit(f"Waiting: {remaining} seconds")
-                    time.sleep(
+                    time.sleep(0.1)
+
+    def stop(self):
+        self.stop_flag = True
